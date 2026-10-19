@@ -1,0 +1,12 @@
+market_data:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: 127.0.0.1
+      user: admin
+      password: admin123
+      port: 5434
+      dbname: market_data
+      schema: public
+      threads: 4

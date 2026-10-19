@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: market_data
+    database: market_data
+    schema: public
+    tables:
+      - name: stg_stock_prices

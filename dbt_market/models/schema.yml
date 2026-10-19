@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: dim_stock
+    columns:
+      - name: stock_key
+        tests:
+          - unique
+          - not_null
+      - name: ticker
+        tests:
+          - not_null
+
+  - name: fact_daily_prices
+    columns:
+      - name: date_key
+        tests:
+          - not_null
+      - name: stock_key
+        tests:
+          - not_null

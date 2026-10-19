@@ -1,0 +1,1068 @@
+[0m15:33:54.643709 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AED54DE120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AED7FA3B10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AED7FA3D90>]}
+
+
+============================== 15:33:54.648741 | 0bde15d2-1be7-43c9-800c-8a52bd7fe710 ==============================
+[0m15:33:54.648741 [info ] [MainThread]: Running with dbt=1.7.20
+[0m15:33:54.649609 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '.', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\othma\\OneDrive\\Desktop\\moroccan-stock-market-data\\dbt_market\\logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:33:54.650067 [info ] [MainThread]: This version of dbt is deprecated and no longer receives regular patches, including for known bugs. We recommend upgrading to a newer supported version of dbt: https://docs.getdbt.com/docs/dbt-versions
+[0m15:33:54.650564 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecated_version_invocation', 'label': '0bde15d2-1be7-43c9-800c-8a52bd7fe710', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AED7E469E0>]}
+[0m15:33:54.651044 [info ] [MainThread]: dbt version: 1.7.20
+[0m15:33:54.651508 [info ] [MainThread]: python version: 3.13.13
+[0m15:33:54.651909 [info ] [MainThread]: python path: C:\Users\othma\OneDrive\Desktop\moroccan-stock-market-data\venv\Scripts\python.exe
+[0m15:33:54.652435 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m15:33:54.769904 [info ] [MainThread]: Using profiles dir at .
+[0m15:33:54.770451 [info ] [MainThread]: Using profiles.yml file at .\profiles.yml
+[0m15:33:54.770943 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\othma\OneDrive\Desktop\moroccan-stock-market-data\dbt_market\dbt_project.yml
+[0m15:33:54.772464 [info ] [MainThread]: adapter type: postgres
+[0m15:33:54.773002 [info ] [MainThread]: adapter version: 1.7.20
+[0m15:33:54.849981 [info ] [MainThread]: Configuration:
+[0m15:33:54.850574 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m15:33:54.851063 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m15:33:54.851586 [info ] [MainThread]: Required dependencies:
+[0m15:33:54.852163 [debug] [MainThread]: Executing "git --help"
+[0m15:33:54.937690 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m15:33:54.938526 [debug] [MainThread]: STDERR: "b''"
+[0m15:33:54.939278 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m15:33:54.940056 [info ] [MainThread]: Connection:
+[0m15:33:54.940850 [info ] [MainThread]:   host: 127.0.0.1
+[0m15:33:54.941592 [info ] [MainThread]:   port: 5434
+[0m15:33:54.942342 [info ] [MainThread]:   user: admin
+[0m15:33:54.942964 [info ] [MainThread]:   database: market_data
+[0m15:33:54.943588 [info ] [MainThread]:   schema: public
+[0m15:33:54.944163 [info ] [MainThread]:   connect_timeout: 10
+[0m15:33:54.944781 [info ] [MainThread]:   role: None
+[0m15:33:54.945351 [info ] [MainThread]:   search_path: None
+[0m15:33:54.945962 [info ] [MainThread]:   keepalives_idle: 0
+[0m15:33:54.946594 [info ] [MainThread]:   sslmode: None
+[0m15:33:54.947185 [info ] [MainThread]:   sslcert: None
+[0m15:33:54.947757 [info ] [MainThread]:   sslkey: None
+[0m15:33:54.948246 [info ] [MainThread]:   sslrootcert: None
+[0m15:33:54.948735 [info ] [MainThread]:   application_name: dbt
+[0m15:33:54.949250 [info ] [MainThread]:   retries: 1
+[0m15:33:54.949806 [info ] [MainThread]: Registered adapter: postgres=1.7.20
+[0m15:33:54.950482 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m15:33:54.950922 [debug] [MainThread]: Using postgres connection "debug"
+[0m15:33:54.951329 [debug] [MainThread]: On debug: select 1 as id
+[0m15:33:54.951717 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:33:54.976790 [debug] [MainThread]: SQL status: SELECT 1 in 0.0 seconds
+[0m15:33:54.977942 [debug] [MainThread]: On debug: Close
+[0m15:33:54.978456 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m15:33:54.979291 [info ] [MainThread]: [32mAll checks passed![0m
+[0m15:33:54.980718 [debug] [MainThread]: Command `dbt debug` succeeded at 15:33:54.980484 after 0.49 seconds
+[0m15:33:54.981223 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m15:33:54.981863 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AED7E4BBD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AED8031040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AED761B750>]}
+[0m15:33:54.982438 [debug] [MainThread]: Flushing usage events
+[0m16:53:25.575231 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C42F9EE120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C4324A3ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C4324A3D90>]}
+
+
+============================== 16:53:25.587787 | ac51bb36-0d60-49bd-8647-b075b9ba6a7e ==============================
+[0m16:53:25.587787 [info ] [MainThread]: Running with dbt=1.7.20
+[0m16:53:25.592236 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '.', 'log_path': 'C:\\Users\\othma\\OneDrive\\Desktop\\moroccan-stock-market-data\\dbt_market\\logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:53:25.593267 [info ] [MainThread]: This version of dbt is deprecated and no longer receives regular patches, including for known bugs. We recommend upgrading to a newer supported version of dbt: https://docs.getdbt.com/docs/dbt-versions
+[0m16:53:25.594508 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecated_version_invocation', 'label': 'ac51bb36-0d60-49bd-8647-b075b9ba6a7e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C43234A8B0>]}
+[0m16:53:26.384388 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ac51bb36-0d60-49bd-8647-b075b9ba6a7e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C432353BD0>]}
+[0m16:53:26.518612 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ac51bb36-0d60-49bd-8647-b075b9ba6a7e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C431B1B750>]}
+[0m16:53:26.522077 [info ] [MainThread]: Registered adapter: postgres=1.7.20
+[0m16:53:26.562532 [debug] [MainThread]: checksum: e60e9a7db60717b27391e9fcca7ffc2f1c59992fad004fb73a09489fe7f93d3f, vars: {}, profile: , target: , version: 1.7.20
+[0m16:53:26.564677 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m16:53:26.565672 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'ac51bb36-0d60-49bd-8647-b075b9ba6a7e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C4326F24E0>]}
+[0m16:53:30.880812 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ac51bb36-0d60-49bd-8647-b075b9ba6a7e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C433A9BCB0>]}
+[0m16:53:30.933549 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ac51bb36-0d60-49bd-8647-b075b9ba6a7e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C4338B5640>]}
+[0m16:53:30.934580 [info ] [MainThread]: Found 2 models, 1 source, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[0m16:53:30.935475 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ac51bb36-0d60-49bd-8647-b075b9ba6a7e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C433A1C890>]}
+[0m16:53:30.938093 [info ] [MainThread]: 
+[0m16:53:30.940366 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m16:53:30.942802 [debug] [ThreadPool]: Acquiring new postgres connection 'list_market_data'
+[0m16:53:30.960142 [debug] [ThreadPool]: Using postgres connection "list_market_data"
+[0m16:53:30.960957 [debug] [ThreadPool]: On list_market_data: /* {"app": "dbt", "dbt_version": "1.7.20", "profile_name": "market_data", "target_name": "dev", "connection_name": "list_market_data"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m16:53:30.961774 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:53:31.036099 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.0 seconds
+[0m16:53:31.037920 [debug] [ThreadPool]: On list_market_data: Close
+[0m16:53:31.042899 [debug] [ThreadPool]: Acquiring new postgres connection 'list_market_data_public'
+[0m16:53:31.052260 [debug] [ThreadPool]: Using postgres connection "list_market_data_public"
+[0m16:53:31.052904 [debug] [ThreadPool]: On list_market_data_public: BEGIN
+[0m16:53:31.053544 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:53:31.190095 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m16:53:31.190980 [debug] [ThreadPool]: Using postgres connection "list_market_data_public"
+[0m16:53:31.192048 [debug] [ThreadPool]: On list_market_data_public: /* {"app": "dbt", "dbt_version": "1.7.20", "profile_name": "market_data", "target_name": "dev", "connection_name": "list_market_data_public"} */
+select
+      'market_data' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'market_data' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'market_data' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m16:53:31.218643 [debug] [ThreadPool]: SQL status: SELECT 1 in 0.0 seconds
+[0m16:53:31.221097 [debug] [ThreadPool]: On list_market_data_public: ROLLBACK
+[0m16:53:31.224109 [debug] [ThreadPool]: On list_market_data_public: Close
+[0m16:53:31.234042 [debug] [MainThread]: Using postgres connection "master"
+[0m16:53:31.234634 [debug] [MainThread]: On master: BEGIN
+[0m16:53:31.235130 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:53:31.281973 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m16:53:31.282563 [debug] [MainThread]: Using postgres connection "master"
+[0m16:53:31.283176 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.7.20", "profile_name": "market_data", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m16:53:31.298522 [debug] [MainThread]: SQL status: SELECT 0 in 0.0 seconds
+[0m16:53:31.300353 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ac51bb36-0d60-49bd-8647-b075b9ba6a7e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C433B28680>]}
+[0m16:53:31.301002 [debug] [MainThread]: On master: ROLLBACK
+[0m16:53:31.302732 [debug] [MainThread]: Using postgres connection "master"
+[0m16:53:31.303259 [debug] [MainThread]: On master: BEGIN
+[0m16:53:31.306334 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m16:53:31.307434 [debug] [MainThread]: On master: COMMIT
+[0m16:53:31.308545 [debug] [MainThread]: Using postgres connection "master"
+[0m16:53:31.309952 [debug] [MainThread]: On master: COMMIT
+[0m16:53:31.312742 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m16:53:31.313723 [debug] [MainThread]: On master: Close
+[0m16:53:31.315831 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m16:53:31.317254 [info ] [MainThread]: 
+[0m16:53:31.327944 [debug] [Thread-1 (]: Began running node model.market_data.dim_stock
+[0m16:53:31.329158 [debug] [Thread-2 (]: Began running node model.market_data.fact_daily_prices
+[0m16:53:31.330548 [info ] [Thread-1 (]: 1 of 2 START sql table model public.dim_stock .................................. [RUN]
+[0m16:53:31.333504 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.market_data.dim_stock'
+[0m16:53:31.331705 [info ] [Thread-2 (]: 2 of 2 START sql table model public.fact_daily_prices .......................... [RUN]
+[0m16:53:31.334460 [debug] [Thread-1 (]: Began compiling node model.market_data.dim_stock
+[0m16:53:31.336034 [debug] [Thread-2 (]: Acquiring new postgres connection 'model.market_data.fact_daily_prices'
+[0m16:53:31.363647 [debug] [Thread-1 (]: Writing injected SQL for node "model.market_data.dim_stock"
+[0m16:53:31.364825 [debug] [Thread-2 (]: Began compiling node model.market_data.fact_daily_prices
+[0m16:53:31.370347 [debug] [Thread-2 (]: Writing injected SQL for node "model.market_data.fact_daily_prices"
+[0m16:53:31.387676 [debug] [Thread-1 (]: Timing info for model.market_data.dim_stock (compile): 16:53:31.336652 => 16:53:31.386972
+[0m16:53:31.389144 [debug] [Thread-1 (]: Began executing node model.market_data.dim_stock
+[0m16:53:31.650849 [debug] [Thread-2 (]: Timing info for model.market_data.fact_daily_prices (compile): 16:53:31.365712 => 16:53:31.650002
+[0m16:53:31.667943 [debug] [Thread-2 (]: Began executing node model.market_data.fact_daily_prices
+[0m16:53:31.697809 [debug] [Thread-1 (]: Writing runtime sql for node "model.market_data.dim_stock"
+[0m16:53:31.699957 [debug] [Thread-2 (]: Writing runtime sql for node "model.market_data.fact_daily_prices"
+[0m16:53:31.705532 [debug] [Thread-1 (]: Using postgres connection "model.market_data.dim_stock"
+[0m16:53:31.707010 [debug] [Thread-1 (]: On model.market_data.dim_stock: BEGIN
+[0m16:53:31.708173 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m16:53:31.710697 [debug] [Thread-2 (]: Using postgres connection "model.market_data.fact_daily_prices"
+[0m16:53:31.712940 [debug] [Thread-2 (]: On model.market_data.fact_daily_prices: BEGIN
+[0m16:53:31.714020 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m16:53:31.752875 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m16:53:31.754050 [debug] [Thread-1 (]: Using postgres connection "model.market_data.dim_stock"
+[0m16:53:31.755067 [debug] [Thread-1 (]: On model.market_data.dim_stock: /* {"app": "dbt", "dbt_version": "1.7.20", "profile_name": "market_data", "target_name": "dev", "node_id": "model.market_data.dim_stock"} */
+
+  
+    
+
+  create  table "market_data"."public"."dim_stock__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+WITH source_data AS (
+    SELECT DISTINCT
+        ticker,
+        company_name
+    FROM "market_data"."public"."stg_stock_prices"
+)
+
+SELECT
+    -- md5 permet de générer une clé technique unique (stock_key) basée sur le Ticker
+    md5(ticker) AS stock_key,
+    ticker,
+    company_name,
+    'Non renseigné' AS sector  -- Le secteur n'était pas dans l'export, on le prépare pour plus tard
+FROM source_data
+  );
+  
+[0m16:53:31.780916 [debug] [Thread-2 (]: SQL status: BEGIN in 0.0 seconds
+[0m16:53:31.782234 [debug] [Thread-2 (]: Using postgres connection "model.market_data.fact_daily_prices"
+[0m16:53:31.783800 [debug] [Thread-2 (]: On model.market_data.fact_daily_prices: /* {"app": "dbt", "dbt_version": "1.7.20", "profile_name": "market_data", "target_name": "dev", "node_id": "model.market_data.fact_daily_prices"} */
+
+  
+    
+
+  create  table "market_data"."public"."fact_daily_prices__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+SELECT
+    date_seance AS date_key,
+    md5(ticker) AS stock_key,
+    open_price,
+    high_price,
+    low_price,
+    close_price,
+    volume_mad,
+    volume_titres,
+    transactions,
+    capitalisation
+FROM "market_data"."public"."stg_stock_prices"
+  );
+  
+[0m16:53:31.818578 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m16:53:31.842825 [debug] [Thread-1 (]: Using postgres connection "model.market_data.dim_stock"
+[0m16:53:31.844593 [debug] [Thread-1 (]: On model.market_data.dim_stock: /* {"app": "dbt", "dbt_version": "1.7.20", "profile_name": "market_data", "target_name": "dev", "node_id": "model.market_data.dim_stock"} */
+alter table "market_data"."public"."dim_stock__dbt_tmp" rename to "dim_stock"
+[0m16:53:31.860459 [debug] [Thread-2 (]: SQL status: SELECT 735 in 0.0 seconds
+[0m16:53:31.861642 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m16:53:31.899875 [debug] [Thread-2 (]: Using postgres connection "model.market_data.fact_daily_prices"
+[0m16:53:31.915443 [debug] [Thread-2 (]: On model.market_data.fact_daily_prices: /* {"app": "dbt", "dbt_version": "1.7.20", "profile_name": "market_data", "target_name": "dev", "node_id": "model.market_data.fact_daily_prices"} */
+alter table "market_data"."public"."fact_daily_prices__dbt_tmp" rename to "fact_daily_prices"
+[0m16:53:31.947532 [debug] [Thread-1 (]: On model.market_data.dim_stock: COMMIT
+[0m16:53:31.949474 [debug] [Thread-1 (]: Using postgres connection "model.market_data.dim_stock"
+[0m16:53:31.951068 [debug] [Thread-1 (]: On model.market_data.dim_stock: COMMIT
+[0m16:53:31.952133 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m16:53:31.961550 [debug] [Thread-2 (]: On model.market_data.fact_daily_prices: COMMIT
+[0m16:53:31.962672 [debug] [Thread-2 (]: Using postgres connection "model.market_data.fact_daily_prices"
+[0m16:53:31.964253 [debug] [Thread-2 (]: On model.market_data.fact_daily_prices: COMMIT
+[0m16:53:31.965658 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m16:53:31.992517 [debug] [Thread-2 (]: SQL status: COMMIT in 0.0 seconds
+[0m16:53:31.988252 [debug] [Thread-1 (]: Applying DROP to: "market_data"."public"."dim_stock__dbt_backup"
+[0m16:53:32.016342 [debug] [Thread-2 (]: Applying DROP to: "market_data"."public"."fact_daily_prices__dbt_backup"
+[0m16:53:32.041367 [debug] [Thread-1 (]: Using postgres connection "model.market_data.dim_stock"
+[0m16:53:32.045118 [debug] [Thread-2 (]: Using postgres connection "model.market_data.fact_daily_prices"
+[0m16:53:32.053378 [debug] [Thread-1 (]: On model.market_data.dim_stock: /* {"app": "dbt", "dbt_version": "1.7.20", "profile_name": "market_data", "target_name": "dev", "node_id": "model.market_data.dim_stock"} */
+drop table if exists "market_data"."public"."dim_stock__dbt_backup" cascade
+[0m16:53:32.054817 [debug] [Thread-2 (]: On model.market_data.fact_daily_prices: /* {"app": "dbt", "dbt_version": "1.7.20", "profile_name": "market_data", "target_name": "dev", "node_id": "model.market_data.fact_daily_prices"} */
+drop table if exists "market_data"."public"."fact_daily_prices__dbt_backup" cascade
+[0m16:53:32.073092 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.0 seconds
+[0m16:53:32.078393 [debug] [Thread-1 (]: Timing info for model.market_data.dim_stock (execute): 16:53:31.390466 => 16:53:32.077152
+[0m16:53:32.079750 [debug] [Thread-2 (]: SQL status: DROP TABLE in 0.0 seconds
+[0m16:53:32.080837 [debug] [Thread-1 (]: On model.market_data.dim_stock: Close
+[0m16:53:32.085214 [debug] [Thread-2 (]: Timing info for model.market_data.fact_daily_prices (execute): 16:53:31.681871 => 16:53:32.084602
+[0m16:53:32.086625 [debug] [Thread-2 (]: On model.market_data.fact_daily_prices: Close
+[0m16:53:32.088860 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ac51bb36-0d60-49bd-8647-b075b9ba6a7e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C433A137F0>]}
+[0m16:53:32.103665 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ac51bb36-0d60-49bd-8647-b075b9ba6a7e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C433857BF0>]}
+[0m16:53:32.105267 [info ] [Thread-1 (]: 1 of 2 OK created sql table model public.dim_stock ............................. [[32mSELECT 1[0m in 0.76s]
+[0m16:53:32.149041 [debug] [Thread-1 (]: Finished running node model.market_data.dim_stock
+[0m16:53:32.135265 [info ] [Thread-2 (]: 2 of 2 OK created sql table model public.fact_daily_prices ..................... [[32mSELECT 735[0m in 0.77s]
+[0m16:53:32.205772 [debug] [Thread-2 (]: Finished running node model.market_data.fact_daily_prices
+[0m16:53:32.215708 [debug] [MainThread]: Using postgres connection "master"
+[0m16:53:32.254351 [debug] [MainThread]: On master: BEGIN
+[0m16:53:32.264086 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m16:53:32.436439 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m16:53:32.437488 [debug] [MainThread]: On master: COMMIT
+[0m16:53:32.438574 [debug] [MainThread]: Using postgres connection "master"
+[0m16:53:32.444576 [debug] [MainThread]: On master: COMMIT
+[0m16:53:32.451293 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m16:53:32.452246 [debug] [MainThread]: On master: Close
+[0m16:53:32.454910 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:53:32.462054 [debug] [MainThread]: Connection 'list_market_data' was properly closed.
+[0m16:53:32.464606 [debug] [MainThread]: Connection 'list_market_data_public' was properly closed.
+[0m16:53:32.465518 [debug] [MainThread]: Connection 'model.market_data.dim_stock' was properly closed.
+[0m16:53:32.466992 [debug] [MainThread]: Connection 'model.market_data.fact_daily_prices' was properly closed.
+[0m16:53:32.467930 [info ] [MainThread]: 
+[0m16:53:32.470781 [info ] [MainThread]: Finished running 2 table models in 0 hours 0 minutes and 1.53 seconds (1.53s).
+[0m16:53:32.476554 [debug] [MainThread]: Command end result
+[0m16:53:32.501213 [info ] [MainThread]: 
+[0m16:53:32.504372 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:53:32.510642 [info ] [MainThread]: 
+[0m16:53:32.513933 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m16:53:32.516791 [debug] [MainThread]: Command `dbt run` succeeded at 16:53:32.516399 after 7.24 seconds
+[0m16:53:32.518376 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C4323CBB60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C42AE1D080>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C431BAE330>]}
+[0m16:53:32.520159 [debug] [MainThread]: Flushing usage events
+[0m17:02:15.743792 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029A6CBFE120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029A6F6CBED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029A6F6CBD90>]}
+
+
+============================== 17:02:15.752372 | 95ef12b5-4d0f-4e26-9541-38b1bf96b5d7 ==============================
+[0m17:02:15.752372 [info ] [MainThread]: Running with dbt=1.7.20
+[0m17:02:15.753792 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '.', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\othma\\OneDrive\\Desktop\\moroccan-stock-market-data\\dbt_market\\logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m17:02:15.754288 [info ] [MainThread]: This version of dbt is deprecated and no longer receives regular patches, including for known bugs. We recommend upgrading to a newer supported version of dbt: https://docs.getdbt.com/docs/dbt-versions
+[0m17:02:15.754782 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecated_version_invocation', 'label': '95ef12b5-4d0f-4e26-9541-38b1bf96b5d7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029A6F56A8B0>]}
+[0m17:02:15.983613 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '95ef12b5-4d0f-4e26-9541-38b1bf96b5d7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029A6F573BD0>]}
+[0m17:02:16.052182 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '95ef12b5-4d0f-4e26-9541-38b1bf96b5d7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029A6ED3B750>]}
+[0m17:02:16.053764 [info ] [MainThread]: Registered adapter: postgres=1.7.20
+[0m17:02:16.061179 [debug] [MainThread]: checksum: e60e9a7db60717b27391e9fcca7ffc2f1c59992fad004fb73a09489fe7f93d3f, vars: {}, profile: , target: , version: 1.7.20
+[0m17:02:16.149694 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 2 files added, 0 files changed.
+[0m17:02:16.150524 [debug] [MainThread]: Partial parsing: added file: market_data://models\schema.yml
+[0m17:02:16.150860 [debug] [MainThread]: Partial parsing: added file: market_data://models\fact_daily_indicators.sql
+[0m17:02:16.461119 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '95ef12b5-4d0f-4e26-9541-38b1bf96b5d7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029A70C794F0>]}
+[0m17:02:16.475956 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '95ef12b5-4d0f-4e26-9541-38b1bf96b5d7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029A70CBF850>]}
+[0m17:02:16.476535 [info ] [MainThread]: Found 3 models, 5 tests, 1 source, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[0m17:02:16.477178 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '95ef12b5-4d0f-4e26-9541-38b1bf96b5d7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029A70D0E8F0>]}
+[0m17:02:16.479707 [info ] [MainThread]: 
+[0m17:02:16.481880 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m17:02:16.483891 [debug] [ThreadPool]: Acquiring new postgres connection 'list_market_data'
+[0m17:02:16.500302 [debug] [ThreadPool]: Using postgres connection "list_market_data"
+[0m17:02:16.500985 [debug] [ThreadPool]: On list_market_data: /* {"app": "dbt", "dbt_version": "1.7.20", "profile_name": "market_data", "target_name": "dev", "connection_name": "list_market_data"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m17:02:16.501444 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:02:16.576737 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.0 seconds
+[0m17:02:16.578206 [debug] [ThreadPool]: On list_market_data: Close
+[0m17:02:16.582179 [debug] [ThreadPool]: Acquiring new postgres connection 'list_market_data_public'
+[0m17:02:16.590347 [debug] [ThreadPool]: Using postgres connection "list_market_data_public"
+[0m17:02:16.590850 [debug] [ThreadPool]: On list_market_data_public: BEGIN
+[0m17:02:16.591229 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:02:16.610244 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m17:02:16.610687 [debug] [ThreadPool]: Using postgres connection "list_market_data_public"
+[0m17:02:16.611112 [debug] [ThreadPool]: On list_market_data_public: /* {"app": "dbt", "dbt_version": "1.7.20", "profile_name": "market_data", "target_name": "dev", "connection_name": "list_market_data_public"} */
+select
+      'market_data' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'market_data' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'market_data' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m17:02:16.619337 [debug] [ThreadPool]: SQL status: SELECT 3 in 0.0 seconds
+[0m17:02:16.621489 [debug] [ThreadPool]: On list_market_data_public: ROLLBACK
+[0m17:02:16.623099 [debug] [ThreadPool]: On list_market_data_public: Close
+[0m17:02:16.630268 [debug] [MainThread]: Using postgres connection "master"
+[0m17:02:16.631317 [debug] [MainThread]: On master: BEGIN
+[0m17:02:16.632110 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:02:16.652943 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m17:02:16.653391 [debug] [MainThread]: Using postgres connection "master"
+[0m17:02:16.653823 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.7.20", "profile_name": "market_data", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m17:02:16.660260 [debug] [MainThread]: SQL status: SELECT 0 in 0.0 seconds
+[0m17:02:16.661550 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '95ef12b5-4d0f-4e26-9541-38b1bf96b5d7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029A70BAC290>]}
+[0m17:02:16.662166 [debug] [MainThread]: On master: ROLLBACK
+[0m17:02:16.664674 [debug] [MainThread]: Using postgres connection "master"
+[0m17:02:16.665462 [debug] [MainThread]: On master: BEGIN
+[0m17:02:16.668891 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m17:02:16.669464 [debug] [MainThread]: On master: COMMIT
+[0m17:02:16.669831 [debug] [MainThread]: Using postgres connection "master"
+[0m17:02:16.670310 [debug] [MainThread]: On master: COMMIT
+[0m17:02:16.672094 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m17:02:16.672539 [debug] [MainThread]: On master: Close
+[0m17:02:16.673596 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m17:02:16.674411 [info ] [MainThread]: 
+[0m17:02:16.678541 [debug] [Thread-1 (]: Began running node model.market_data.dim_stock
+[0m17:02:16.679503 [debug] [Thread-2 (]: Began running node model.market_data.fact_daily_prices
+[0m17:02:16.680469 [info ] [Thread-1 (]: 1 of 3 START sql table model public.dim_stock .................................. [RUN]
+[0m17:02:16.684167 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.market_data.dim_stock'
+[0m17:02:16.681972 [info ] [Thread-2 (]: 2 of 3 START sql table model public.fact_daily_prices .......................... [RUN]
+[0m17:02:16.685349 [debug] [Thread-1 (]: Began compiling node model.market_data.dim_stock
+[0m17:02:16.686908 [debug] [Thread-2 (]: Acquiring new postgres connection 'model.market_data.fact_daily_prices'
+[0m17:02:16.696666 [debug] [Thread-1 (]: Writing injected SQL for node "model.market_data.dim_stock"
+[0m17:02:16.698164 [debug] [Thread-2 (]: Began compiling node model.market_data.fact_daily_prices
+[0m17:02:16.702308 [debug] [Thread-2 (]: Writing injected SQL for node "model.market_data.fact_daily_prices"
+[0m17:02:16.703960 [debug] [Thread-2 (]: Timing info for model.market_data.fact_daily_prices (compile): 17:02:16.698857 => 17:02:16.703489
+[0m17:02:16.704762 [debug] [Thread-1 (]: Timing info for model.market_data.dim_stock (compile): 17:02:16.687439 => 17:02:16.704359
+[0m17:02:16.705975 [debug] [Thread-2 (]: Began executing node model.market_data.fact_daily_prices
+[0m17:02:16.706747 [debug] [Thread-1 (]: Began executing node model.market_data.dim_stock
+[0m17:02:16.767685 [debug] [Thread-1 (]: Writing runtime sql for node "model.market_data.dim_stock"
+[0m17:02:16.768499 [debug] [Thread-2 (]: Writing runtime sql for node "model.market_data.fact_daily_prices"
+[0m17:02:16.770196 [debug] [Thread-2 (]: Using postgres connection "model.market_data.fact_daily_prices"
+[0m17:02:16.770843 [debug] [Thread-1 (]: Using postgres connection "model.market_data.dim_stock"
+[0m17:02:16.771437 [debug] [Thread-2 (]: On model.market_data.fact_daily_prices: BEGIN
+[0m17:02:16.772056 [debug] [Thread-1 (]: On model.market_data.dim_stock: BEGIN
+[0m17:02:16.772677 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m17:02:16.773192 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:02:16.792755 [debug] [Thread-2 (]: SQL status: BEGIN in 0.0 seconds
+[0m17:02:16.793312 [debug] [Thread-2 (]: Using postgres connection "model.market_data.fact_daily_prices"
+[0m17:02:16.793742 [debug] [Thread-2 (]: On model.market_data.fact_daily_prices: /* {"app": "dbt", "dbt_version": "1.7.20", "profile_name": "market_data", "target_name": "dev", "node_id": "model.market_data.fact_daily_prices"} */
+
+  
+    
+
+  create  table "market_data"."public"."fact_daily_prices__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+SELECT
+    date_seance AS date_key,
+    md5(ticker) AS stock_key,
+    open_price,
+    high_price,
+    low_price,
+    close_price,
+    volume_mad,
+    volume_titres,
+    transactions,
+    capitalisation
+FROM "market_data"."public"."stg_stock_prices"
+  );
+  
+[0m17:02:16.816809 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m17:02:16.817737 [debug] [Thread-1 (]: Using postgres connection "model.market_data.dim_stock"
+[0m17:02:16.818694 [debug] [Thread-1 (]: On model.market_data.dim_stock: /* {"app": "dbt", "dbt_version": "1.7.20", "profile_name": "market_data", "target_name": "dev", "node_id": "model.market_data.dim_stock"} */
+
+  
+    
+
+  create  table "market_data"."public"."dim_stock__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+WITH source_data AS (
+    SELECT DISTINCT
+        ticker,
+        company_name
+    FROM "market_data"."public"."stg_stock_prices"
+)
+
+SELECT
+    -- md5 permet de générer une clé technique unique (stock_key) basée sur le Ticker
+    md5(ticker) AS stock_key,
+    ticker,
+    company_name,
+    'Non renseigné' AS sector  -- Le secteur n'était pas dans l'export, on le prépare pour plus tard
+FROM source_data
+  );
+  
+[0m17:02:16.819601 [debug] [Thread-2 (]: SQL status: SELECT 735 in 0.0 seconds
+[0m17:02:16.830189 [debug] [Thread-2 (]: Using postgres connection "model.market_data.fact_daily_prices"
+[0m17:02:16.831597 [debug] [Thread-2 (]: On model.market_data.fact_daily_prices: /* {"app": "dbt", "dbt_version": "1.7.20", "profile_name": "market_data", "target_name": "dev", "node_id": "model.market_data.fact_daily_prices"} */
+alter table "market_data"."public"."fact_daily_prices" rename to "fact_daily_prices__dbt_backup"
+[0m17:02:16.833493 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m17:02:16.834750 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m17:02:16.839336 [debug] [Thread-1 (]: Using postgres connection "model.market_data.dim_stock"
+[0m17:02:16.842700 [debug] [Thread-2 (]: Using postgres connection "model.market_data.fact_daily_prices"
+[0m17:02:16.843397 [debug] [Thread-1 (]: On model.market_data.dim_stock: /* {"app": "dbt", "dbt_version": "1.7.20", "profile_name": "market_data", "target_name": "dev", "node_id": "model.market_data.dim_stock"} */
+alter table "market_data"."public"."dim_stock" rename to "dim_stock__dbt_backup"
+[0m17:02:16.844040 [debug] [Thread-2 (]: On model.market_data.fact_daily_prices: /* {"app": "dbt", "dbt_version": "1.7.20", "profile_name": "market_data", "target_name": "dev", "node_id": "model.market_data.fact_daily_prices"} */
+alter table "market_data"."public"."fact_daily_prices__dbt_tmp" rename to "fact_daily_prices"
+[0m17:02:16.847267 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m17:02:16.848948 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m17:02:16.877106 [debug] [Thread-2 (]: On model.market_data.fact_daily_prices: COMMIT
+[0m17:02:16.881306 [debug] [Thread-1 (]: Using postgres connection "model.market_data.dim_stock"
+[0m17:02:16.881968 [debug] [Thread-2 (]: Using postgres connection "model.market_data.fact_daily_prices"
+[0m17:02:16.882553 [debug] [Thread-1 (]: On model.market_data.dim_stock: /* {"app": "dbt", "dbt_version": "1.7.20", "profile_name": "market_data", "target_name": "dev", "node_id": "model.market_data.dim_stock"} */
+alter table "market_data"."public"."dim_stock__dbt_tmp" rename to "dim_stock"
+[0m17:02:16.883184 [debug] [Thread-2 (]: On model.market_data.fact_daily_prices: COMMIT
+[0m17:02:16.886137 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m17:02:16.888889 [debug] [Thread-1 (]: On model.market_data.dim_stock: COMMIT
+[0m17:02:16.889365 [debug] [Thread-2 (]: SQL status: COMMIT in 0.0 seconds
+[0m17:02:16.889897 [debug] [Thread-1 (]: Using postgres connection "model.market_data.dim_stock"
+[0m17:02:16.897616 [debug] [Thread-2 (]: Applying DROP to: "market_data"."public"."fact_daily_prices__dbt_backup"
+[0m17:02:16.898168 [debug] [Thread-1 (]: On model.market_data.dim_stock: COMMIT
+[0m17:02:16.903505 [debug] [Thread-2 (]: Using postgres connection "model.market_data.fact_daily_prices"
+[0m17:02:16.904207 [debug] [Thread-2 (]: On model.market_data.fact_daily_prices: /* {"app": "dbt", "dbt_version": "1.7.20", "profile_name": "market_data", "target_name": "dev", "node_id": "model.market_data.fact_daily_prices"} */
+drop table if exists "market_data"."public"."fact_daily_prices__dbt_backup" cascade
+[0m17:02:16.908509 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m17:02:16.911576 [debug] [Thread-1 (]: Applying DROP to: "market_data"."public"."dim_stock__dbt_backup"
+[0m17:02:16.914157 [debug] [Thread-1 (]: Using postgres connection "model.market_data.dim_stock"
+[0m17:02:16.914879 [debug] [Thread-1 (]: On model.market_data.dim_stock: /* {"app": "dbt", "dbt_version": "1.7.20", "profile_name": "market_data", "target_name": "dev", "node_id": "model.market_data.dim_stock"} */
+drop table if exists "market_data"."public"."dim_stock__dbt_backup" cascade
+[0m17:02:16.918588 [debug] [Thread-2 (]: SQL status: DROP TABLE in 0.0 seconds
+[0m17:02:16.920885 [debug] [Thread-2 (]: Timing info for model.market_data.fact_daily_prices (execute): 17:02:16.707126 => 17:02:16.920495
+[0m17:02:16.921420 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.0 seconds
+[0m17:02:16.921859 [debug] [Thread-2 (]: On model.market_data.fact_daily_prices: Close
+[0m17:02:16.923486 [debug] [Thread-1 (]: Timing info for model.market_data.dim_stock (execute): 17:02:16.735972 => 17:02:16.923230
+[0m17:02:16.924083 [debug] [Thread-1 (]: On model.market_data.dim_stock: Close
+[0m17:02:16.924972 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '95ef12b5-4d0f-4e26-9541-38b1bf96b5d7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029A70C91650>]}
+[0m17:02:16.926921 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '95ef12b5-4d0f-4e26-9541-38b1bf96b5d7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029A70AADA90>]}
+[0m17:02:16.925753 [info ] [Thread-2 (]: 2 of 3 OK created sql table model public.fact_daily_prices ..................... [[32mSELECT 735[0m in 0.24s]
+[0m17:02:16.929066 [debug] [Thread-2 (]: Finished running node model.market_data.fact_daily_prices
+[0m17:02:16.928028 [info ] [Thread-1 (]: 1 of 3 OK created sql table model public.dim_stock ............................. [[32mSELECT 1[0m in 0.24s]
+[0m17:02:16.930565 [debug] [Thread-1 (]: Finished running node model.market_data.dim_stock
+[0m17:02:16.931243 [debug] [Thread-3 (]: Began running node model.market_data.fact_daily_indicators
+[0m17:02:16.932169 [info ] [Thread-3 (]: 3 of 3 START sql table model public.fact_daily_indicators ...................... [RUN]
+[0m17:02:16.933790 [debug] [Thread-3 (]: Acquiring new postgres connection 'model.market_data.fact_daily_indicators'
+[0m17:02:16.934705 [debug] [Thread-3 (]: Began compiling node model.market_data.fact_daily_indicators
+[0m17:02:16.939540 [debug] [Thread-3 (]: Writing injected SQL for node "model.market_data.fact_daily_indicators"
+[0m17:02:16.941503 [debug] [Thread-3 (]: Timing info for model.market_data.fact_daily_indicators (compile): 17:02:16.935121 => 17:02:16.940997
+[0m17:02:16.942304 [debug] [Thread-3 (]: Began executing node model.market_data.fact_daily_indicators
+[0m17:02:16.951300 [debug] [Thread-3 (]: Writing runtime sql for node "model.market_data.fact_daily_indicators"
+[0m17:02:16.954670 [debug] [Thread-3 (]: Using postgres connection "model.market_data.fact_daily_indicators"
+[0m17:02:16.955394 [debug] [Thread-3 (]: On model.market_data.fact_daily_indicators: BEGIN
+[0m17:02:16.955909 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m17:02:16.985101 [debug] [Thread-3 (]: SQL status: BEGIN in 0.0 seconds
+[0m17:02:16.985656 [debug] [Thread-3 (]: Using postgres connection "model.market_data.fact_daily_indicators"
+[0m17:02:16.986265 [debug] [Thread-3 (]: On model.market_data.fact_daily_indicators: /* {"app": "dbt", "dbt_version": "1.7.20", "profile_name": "market_data", "target_name": "dev", "node_id": "model.market_data.fact_daily_indicators"} */
+
+  
+    
+
+  create  table "market_data"."public"."fact_daily_indicators__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+WITH price_data AS (
+    SELECT
+        date_key,
+        stock_key,
+        close_price
+    FROM "market_data"."public"."fact_daily_prices"
+)
+
+SELECT
+    date_key,
+    stock_key,
+    close_price,
+    -- Calcul du rendement quotidien : (Prix du jour - Prix de la veille) / Prix de la veille
+    (close_price - LAG(close_price) OVER (PARTITION BY stock_key ORDER BY date_key)) / 
+        NULLIF(LAG(close_price) OVER (PARTITION BY stock_key ORDER BY date_key), 0) AS daily_return,
+    
+    -- Moyennes mobiles sur 20 et 50 jours
+    AVG(close_price) OVER (PARTITION BY stock_key ORDER BY date_key ROWS BETWEEN 19 PRECEDING AND CURRENT ROW) AS moving_average_20,
+    AVG(close_price) OVER (PARTITION BY stock_key ORDER BY date_key ROWS BETWEEN 49 PRECEDING AND CURRENT ROW) AS moving_average_50
+FROM price_data
+  );
+  
+[0m17:02:17.011216 [debug] [Thread-3 (]: SQL status: SELECT 735 in 0.0 seconds
+[0m17:02:17.016596 [debug] [Thread-3 (]: Using postgres connection "model.market_data.fact_daily_indicators"
+[0m17:02:17.017235 [debug] [Thread-3 (]: On model.market_data.fact_daily_indicators: /* {"app": "dbt", "dbt_version": "1.7.20", "profile_name": "market_data", "target_name": "dev", "node_id": "model.market_data.fact_daily_indicators"} */
+alter table "market_data"."public"."fact_daily_indicators__dbt_tmp" rename to "fact_daily_indicators"
+[0m17:02:17.019268 [debug] [Thread-3 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m17:02:17.021928 [debug] [Thread-3 (]: On model.market_data.fact_daily_indicators: COMMIT
+[0m17:02:17.022509 [debug] [Thread-3 (]: Using postgres connection "model.market_data.fact_daily_indicators"
+[0m17:02:17.023002 [debug] [Thread-3 (]: On model.market_data.fact_daily_indicators: COMMIT
+[0m17:02:17.027743 [debug] [Thread-3 (]: SQL status: COMMIT in 0.0 seconds
+[0m17:02:17.031448 [debug] [Thread-3 (]: Applying DROP to: "market_data"."public"."fact_daily_indicators__dbt_backup"
+[0m17:02:17.033027 [debug] [Thread-3 (]: Using postgres connection "model.market_data.fact_daily_indicators"
+[0m17:02:17.033555 [debug] [Thread-3 (]: On model.market_data.fact_daily_indicators: /* {"app": "dbt", "dbt_version": "1.7.20", "profile_name": "market_data", "target_name": "dev", "node_id": "model.market_data.fact_daily_indicators"} */
+drop table if exists "market_data"."public"."fact_daily_indicators__dbt_backup" cascade
+[0m17:02:17.036141 [debug] [Thread-3 (]: SQL status: DROP TABLE in 0.0 seconds
+[0m17:02:17.038361 [debug] [Thread-3 (]: Timing info for model.market_data.fact_daily_indicators (execute): 17:02:16.942778 => 17:02:17.038111
+[0m17:02:17.038869 [debug] [Thread-3 (]: On model.market_data.fact_daily_indicators: Close
+[0m17:02:17.039966 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '95ef12b5-4d0f-4e26-9541-38b1bf96b5d7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029A70D4A850>]}
+[0m17:02:17.040673 [info ] [Thread-3 (]: 3 of 3 OK created sql table model public.fact_daily_indicators ................. [[32mSELECT 735[0m in 0.11s]
+[0m17:02:17.041586 [debug] [Thread-3 (]: Finished running node model.market_data.fact_daily_indicators
+[0m17:02:17.043559 [debug] [MainThread]: Using postgres connection "master"
+[0m17:02:17.043916 [debug] [MainThread]: On master: BEGIN
+[0m17:02:17.044614 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m17:02:17.076603 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m17:02:17.077029 [debug] [MainThread]: On master: COMMIT
+[0m17:02:17.077331 [debug] [MainThread]: Using postgres connection "master"
+[0m17:02:17.077651 [debug] [MainThread]: On master: COMMIT
+[0m17:02:17.079575 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m17:02:17.081054 [debug] [MainThread]: On master: Close
+[0m17:02:17.082842 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:02:17.083426 [debug] [MainThread]: Connection 'list_market_data' was properly closed.
+[0m17:02:17.084102 [debug] [MainThread]: Connection 'list_market_data_public' was properly closed.
+[0m17:02:17.084784 [debug] [MainThread]: Connection 'model.market_data.dim_stock' was properly closed.
+[0m17:02:17.085361 [debug] [MainThread]: Connection 'model.market_data.fact_daily_prices' was properly closed.
+[0m17:02:17.085834 [debug] [MainThread]: Connection 'model.market_data.fact_daily_indicators' was properly closed.
+[0m17:02:17.086437 [info ] [MainThread]: 
+[0m17:02:17.087086 [info ] [MainThread]: Finished running 3 table models in 0 hours 0 minutes and 0.61 seconds (0.61s).
+[0m17:02:17.088524 [debug] [MainThread]: Command end result
+[0m17:02:17.100887 [info ] [MainThread]: 
+[0m17:02:17.101647 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:02:17.102461 [info ] [MainThread]: 
+[0m17:02:17.103131 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m17:02:17.104423 [debug] [MainThread]: Command `dbt run` succeeded at 17:02:17.104221 after 1.53 seconds
+[0m17:02:17.104807 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029A6F5EBB60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029A6802D080>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029A6E7383B0>]}
+[0m17:02:17.105176 [debug] [MainThread]: Flushing usage events
+[0m17:02:24.056470 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m17:02:29.407805 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000289B686E120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000289B9327ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000289B9327D90>]}
+
+
+============================== 17:02:29.413112 | d76d7885-b0e5-47a3-8260-62153fd497b5 ==============================
+[0m17:02:29.413112 [info ] [MainThread]: Running with dbt=1.7.20
+[0m17:02:29.414437 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '.', 'debug': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\othma\\OneDrive\\Desktop\\moroccan-stock-market-data\\dbt_market\\logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt test', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m17:02:29.415366 [info ] [MainThread]: This version of dbt is deprecated and no longer receives regular patches, including for known bugs. We recommend upgrading to a newer supported version of dbt: https://docs.getdbt.com/docs/dbt-versions
+[0m17:02:29.416393 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecated_version_invocation', 'label': 'd76d7885-b0e5-47a3-8260-62153fd497b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000289B91C68B0>]}
+[0m17:02:29.620466 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd76d7885-b0e5-47a3-8260-62153fd497b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000289B91D3BD0>]}
+[0m17:02:29.680181 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd76d7885-b0e5-47a3-8260-62153fd497b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000289B8997750>]}
+[0m17:02:29.682612 [info ] [MainThread]: Registered adapter: postgres=1.7.20
+[0m17:02:29.690017 [debug] [MainThread]: checksum: e60e9a7db60717b27391e9fcca7ffc2f1c59992fad004fb73a09489fe7f93d3f, vars: {}, profile: , target: , version: 1.7.20
+[0m17:02:29.773787 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:02:29.774280 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:02:29.782946 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd76d7885-b0e5-47a3-8260-62153fd497b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000289BA690E60>]}
+[0m17:02:29.797929 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd76d7885-b0e5-47a3-8260-62153fd497b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000289BA5BBA10>]}
+[0m17:02:29.798953 [info ] [MainThread]: Found 3 models, 5 tests, 1 source, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[0m17:02:29.799945 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd76d7885-b0e5-47a3-8260-62153fd497b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000289BA661640>]}
+[0m17:02:29.802176 [info ] [MainThread]: 
+[0m17:02:29.803114 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m17:02:29.804333 [debug] [ThreadPool]: Acquiring new postgres connection 'list_market_data_public'
+[0m17:02:29.815487 [debug] [ThreadPool]: Using postgres connection "list_market_data_public"
+[0m17:02:29.816004 [debug] [ThreadPool]: On list_market_data_public: BEGIN
+[0m17:02:29.816333 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:02:29.851808 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m17:02:29.852255 [debug] [ThreadPool]: Using postgres connection "list_market_data_public"
+[0m17:02:29.852578 [debug] [ThreadPool]: On list_market_data_public: /* {"app": "dbt", "dbt_version": "1.7.20", "profile_name": "market_data", "target_name": "dev", "connection_name": "list_market_data_public"} */
+select
+      'market_data' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'market_data' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'market_data' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m17:02:29.856879 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.0 seconds
+[0m17:02:29.858715 [debug] [ThreadPool]: On list_market_data_public: ROLLBACK
+[0m17:02:29.860351 [debug] [ThreadPool]: On list_market_data_public: Close
+[0m17:02:29.868995 [debug] [MainThread]: Using postgres connection "master"
+[0m17:02:29.869410 [debug] [MainThread]: On master: BEGIN
+[0m17:02:29.869761 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:02:29.889263 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m17:02:29.889687 [debug] [MainThread]: Using postgres connection "master"
+[0m17:02:29.890036 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.7.20", "profile_name": "market_data", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m17:02:29.894717 [debug] [MainThread]: SQL status: SELECT 0 in 0.0 seconds
+[0m17:02:29.897283 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd76d7885-b0e5-47a3-8260-62153fd497b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000289B949FF50>]}
+[0m17:02:29.898301 [debug] [MainThread]: On master: ROLLBACK
+[0m17:02:29.900535 [debug] [MainThread]: Using postgres connection "master"
+[0m17:02:29.901231 [debug] [MainThread]: On master: BEGIN
+[0m17:02:29.904289 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m17:02:29.905037 [debug] [MainThread]: On master: COMMIT
+[0m17:02:29.905527 [debug] [MainThread]: Using postgres connection "master"
+[0m17:02:29.906083 [debug] [MainThread]: On master: COMMIT
+[0m17:02:29.907678 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m17:02:29.908372 [debug] [MainThread]: On master: Close
+[0m17:02:29.909730 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m17:02:29.910524 [info ] [MainThread]: 
+[0m17:02:29.918187 [debug] [Thread-3 (]: Began running node test.market_data.not_null_fact_daily_prices_date_key.9e48087484
+[0m17:02:29.919057 [debug] [Thread-1 (]: Began running node test.market_data.not_null_dim_stock_stock_key.e2c95d8500
+[0m17:02:29.919711 [debug] [Thread-2 (]: Began running node test.market_data.not_null_dim_stock_ticker.90aca455cd
+[0m17:02:29.920368 [debug] [Thread-4 (]: Began running node test.market_data.not_null_fact_daily_prices_stock_key.34241fb50a
+[0m17:02:29.921040 [info ] [Thread-3 (]: 3 of 5 START test not_null_fact_daily_prices_date_key .......................... [RUN]
+[0m17:02:29.921667 [info ] [Thread-1 (]: 1 of 5 START test not_null_dim_stock_stock_key ................................. [RUN]
+[0m17:02:29.922476 [info ] [Thread-2 (]: 2 of 5 START test not_null_dim_stock_ticker .................................... [RUN]
+[0m17:02:29.925031 [debug] [Thread-3 (]: Acquiring new postgres connection 'test.market_data.not_null_fact_daily_prices_date_key.9e48087484'
+[0m17:02:29.923646 [info ] [Thread-4 (]: 4 of 5 START test not_null_fact_daily_prices_stock_key ......................... [RUN]
+[0m17:02:29.926624 [debug] [Thread-1 (]: Acquiring new postgres connection 'test.market_data.not_null_dim_stock_stock_key.e2c95d8500'
+[0m17:02:29.927852 [debug] [Thread-2 (]: Acquiring new postgres connection 'test.market_data.not_null_dim_stock_ticker.90aca455cd'
+[0m17:02:29.931776 [debug] [Thread-1 (]: Began compiling node test.market_data.not_null_dim_stock_stock_key.e2c95d8500
+[0m17:02:29.930847 [debug] [Thread-4 (]: Acquiring new postgres connection 'test.market_data.not_null_fact_daily_prices_stock_key.34241fb50a'
+[0m17:02:29.933026 [debug] [Thread-2 (]: Began compiling node test.market_data.not_null_dim_stock_ticker.90aca455cd
+[0m17:02:29.928590 [debug] [Thread-3 (]: Began compiling node test.market_data.not_null_fact_daily_prices_date_key.9e48087484
+[0m17:02:29.956931 [debug] [Thread-4 (]: Began compiling node test.market_data.not_null_fact_daily_prices_stock_key.34241fb50a
+[0m17:02:29.963306 [debug] [Thread-1 (]: Writing injected SQL for node "test.market_data.not_null_dim_stock_stock_key.e2c95d8500"
+[0m17:02:29.970299 [debug] [Thread-2 (]: Writing injected SQL for node "test.market_data.not_null_dim_stock_ticker.90aca455cd"
+[0m17:02:29.976379 [debug] [Thread-3 (]: Writing injected SQL for node "test.market_data.not_null_fact_daily_prices_date_key.9e48087484"
+[0m17:02:29.989430 [debug] [Thread-4 (]: Writing injected SQL for node "test.market_data.not_null_fact_daily_prices_stock_key.34241fb50a"
+[0m17:02:29.993342 [debug] [Thread-1 (]: Timing info for test.market_data.not_null_dim_stock_stock_key.e2c95d8500 (compile): 17:02:29.933730 => 17:02:29.992701
+[0m17:02:29.994066 [debug] [Thread-1 (]: Began executing node test.market_data.not_null_dim_stock_stock_key.e2c95d8500
+[0m17:02:30.017133 [debug] [Thread-1 (]: Writing runtime sql for node "test.market_data.not_null_dim_stock_stock_key.e2c95d8500"
+[0m17:02:30.018105 [debug] [Thread-3 (]: Timing info for test.market_data.not_null_fact_daily_prices_date_key.9e48087484 (compile): 17:02:29.970898 => 17:02:30.017694
+[0m17:02:30.018789 [debug] [Thread-3 (]: Began executing node test.market_data.not_null_fact_daily_prices_date_key.9e48087484
+[0m17:02:30.021630 [debug] [Thread-3 (]: Writing runtime sql for node "test.market_data.not_null_fact_daily_prices_date_key.9e48087484"
+[0m17:02:30.022560 [debug] [Thread-4 (]: Timing info for test.market_data.not_null_fact_daily_prices_stock_key.34241fb50a (compile): 17:02:29.976794 => 17:02:30.021993
+[0m17:02:30.023037 [debug] [Thread-2 (]: Timing info for test.market_data.not_null_dim_stock_ticker.90aca455cd (compile): 17:02:29.963983 => 17:02:30.022805
+[0m17:02:30.023613 [debug] [Thread-4 (]: Began executing node test.market_data.not_null_fact_daily_prices_stock_key.34241fb50a
+[0m17:02:30.024200 [debug] [Thread-2 (]: Began executing node test.market_data.not_null_dim_stock_ticker.90aca455cd
+[0m17:02:30.026641 [debug] [Thread-4 (]: Writing runtime sql for node "test.market_data.not_null_fact_daily_prices_stock_key.34241fb50a"
+[0m17:02:30.027209 [debug] [Thread-1 (]: Using postgres connection "test.market_data.not_null_dim_stock_stock_key.e2c95d8500"
+[0m17:02:30.030231 [debug] [Thread-2 (]: Writing runtime sql for node "test.market_data.not_null_dim_stock_ticker.90aca455cd"
+[0m17:02:30.031380 [debug] [Thread-3 (]: Using postgres connection "test.market_data.not_null_fact_daily_prices_date_key.9e48087484"
+[0m17:02:30.032290 [debug] [Thread-1 (]: On test.market_data.not_null_dim_stock_stock_key.e2c95d8500: BEGIN
+[0m17:02:30.033310 [debug] [Thread-3 (]: On test.market_data.not_null_fact_daily_prices_date_key.9e48087484: BEGIN
+[0m17:02:30.033927 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:02:30.034559 [debug] [Thread-4 (]: Using postgres connection "test.market_data.not_null_fact_daily_prices_stock_key.34241fb50a"
+[0m17:02:30.035175 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m17:02:30.036003 [debug] [Thread-2 (]: Using postgres connection "test.market_data.not_null_dim_stock_ticker.90aca455cd"
+[0m17:02:30.036642 [debug] [Thread-4 (]: On test.market_data.not_null_fact_daily_prices_stock_key.34241fb50a: BEGIN
+[0m17:02:30.037520 [debug] [Thread-2 (]: On test.market_data.not_null_dim_stock_ticker.90aca455cd: BEGIN
+[0m17:02:30.038109 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m17:02:30.038846 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m17:02:30.060238 [debug] [Thread-2 (]: SQL status: BEGIN in 0.0 seconds
+[0m17:02:30.060741 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m17:02:30.061162 [debug] [Thread-3 (]: SQL status: BEGIN in 0.0 seconds
+[0m17:02:30.061617 [debug] [Thread-2 (]: Using postgres connection "test.market_data.not_null_dim_stock_ticker.90aca455cd"
+[0m17:02:30.062260 [debug] [Thread-4 (]: SQL status: BEGIN in 0.0 seconds
+[0m17:02:30.063292 [debug] [Thread-1 (]: Using postgres connection "test.market_data.not_null_dim_stock_stock_key.e2c95d8500"
+[0m17:02:30.064213 [debug] [Thread-3 (]: Using postgres connection "test.market_data.not_null_fact_daily_prices_date_key.9e48087484"
+[0m17:02:30.065119 [debug] [Thread-2 (]: On test.market_data.not_null_dim_stock_ticker.90aca455cd: /* {"app": "dbt", "dbt_version": "1.7.20", "profile_name": "market_data", "target_name": "dev", "node_id": "test.market_data.not_null_dim_stock_ticker.90aca455cd"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select ticker
+from "market_data"."public"."dim_stock"
+where ticker is null
+
+
+
+      
+    ) dbt_internal_test
+[0m17:02:30.066204 [debug] [Thread-4 (]: Using postgres connection "test.market_data.not_null_fact_daily_prices_stock_key.34241fb50a"
+[0m17:02:30.067229 [debug] [Thread-1 (]: On test.market_data.not_null_dim_stock_stock_key.e2c95d8500: /* {"app": "dbt", "dbt_version": "1.7.20", "profile_name": "market_data", "target_name": "dev", "node_id": "test.market_data.not_null_dim_stock_stock_key.e2c95d8500"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select stock_key
+from "market_data"."public"."dim_stock"
+where stock_key is null
+
+
+
+      
+    ) dbt_internal_test
+[0m17:02:30.068082 [debug] [Thread-3 (]: On test.market_data.not_null_fact_daily_prices_date_key.9e48087484: /* {"app": "dbt", "dbt_version": "1.7.20", "profile_name": "market_data", "target_name": "dev", "node_id": "test.market_data.not_null_fact_daily_prices_date_key.9e48087484"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select date_key
+from "market_data"."public"."fact_daily_prices"
+where date_key is null
+
+
+
+      
+    ) dbt_internal_test
+[0m17:02:30.068925 [debug] [Thread-4 (]: On test.market_data.not_null_fact_daily_prices_stock_key.34241fb50a: /* {"app": "dbt", "dbt_version": "1.7.20", "profile_name": "market_data", "target_name": "dev", "node_id": "test.market_data.not_null_fact_daily_prices_stock_key.34241fb50a"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select stock_key
+from "market_data"."public"."fact_daily_prices"
+where stock_key is null
+
+
+
+      
+    ) dbt_internal_test
+[0m17:02:30.071663 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m17:02:30.072204 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m17:02:30.074297 [debug] [Thread-1 (]: Timing info for test.market_data.not_null_dim_stock_stock_key.e2c95d8500 (execute): 17:02:29.994490 => 17:02:30.074041
+[0m17:02:30.074696 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m17:02:30.076701 [debug] [Thread-2 (]: Timing info for test.market_data.not_null_dim_stock_ticker.90aca455cd (execute): 17:02:30.027560 => 17:02:30.076245
+[0m17:02:30.077351 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m17:02:30.077994 [debug] [Thread-1 (]: On test.market_data.not_null_dim_stock_stock_key.e2c95d8500: ROLLBACK
+[0m17:02:30.080485 [debug] [Thread-4 (]: Timing info for test.market_data.not_null_fact_daily_prices_stock_key.34241fb50a (execute): 17:02:30.024532 => 17:02:30.079949
+[0m17:02:30.081316 [debug] [Thread-2 (]: On test.market_data.not_null_dim_stock_ticker.90aca455cd: ROLLBACK
+[0m17:02:30.084174 [debug] [Thread-3 (]: Timing info for test.market_data.not_null_fact_daily_prices_date_key.9e48087484 (execute): 17:02:30.019227 => 17:02:30.083697
+[0m17:02:30.084970 [debug] [Thread-4 (]: On test.market_data.not_null_fact_daily_prices_stock_key.34241fb50a: ROLLBACK
+[0m17:02:30.085710 [debug] [Thread-3 (]: On test.market_data.not_null_fact_daily_prices_date_key.9e48087484: ROLLBACK
+[0m17:02:30.086409 [debug] [Thread-2 (]: On test.market_data.not_null_dim_stock_ticker.90aca455cd: Close
+[0m17:02:30.087001 [debug] [Thread-1 (]: On test.market_data.not_null_dim_stock_stock_key.e2c95d8500: Close
+[0m17:02:30.087621 [debug] [Thread-4 (]: On test.market_data.not_null_fact_daily_prices_stock_key.34241fb50a: Close
+[0m17:02:30.089532 [debug] [Thread-3 (]: On test.market_data.not_null_fact_daily_prices_date_key.9e48087484: Close
+[0m17:02:30.089025 [info ] [Thread-2 (]: 2 of 5 PASS not_null_dim_stock_ticker .......................................... [[32mPASS[0m in 0.16s]
+[0m17:02:30.091122 [info ] [Thread-1 (]: 1 of 5 PASS not_null_dim_stock_stock_key ....................................... [[32mPASS[0m in 0.16s]
+[0m17:02:30.095487 [debug] [Thread-2 (]: Finished running node test.market_data.not_null_dim_stock_ticker.90aca455cd
+[0m17:02:30.092762 [info ] [Thread-4 (]: 4 of 5 PASS not_null_fact_daily_prices_stock_key ............................... [[32mPASS[0m in 0.16s]
+[0m17:02:30.097948 [debug] [Thread-1 (]: Finished running node test.market_data.not_null_dim_stock_stock_key.e2c95d8500
+[0m17:02:30.099167 [debug] [Thread-2 (]: Began running node test.market_data.unique_dim_stock_stock_key.e1e45dbe18
+[0m17:02:30.094456 [info ] [Thread-3 (]: 3 of 5 PASS not_null_fact_daily_prices_date_key ................................ [[32mPASS[0m in 0.17s]
+[0m17:02:30.100820 [debug] [Thread-4 (]: Finished running node test.market_data.not_null_fact_daily_prices_stock_key.34241fb50a
+[0m17:02:30.102699 [debug] [Thread-3 (]: Finished running node test.market_data.not_null_fact_daily_prices_date_key.9e48087484
+[0m17:02:30.101785 [info ] [Thread-2 (]: 5 of 5 START test unique_dim_stock_stock_key ................................... [RUN]
+[0m17:02:30.104124 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.market_data.not_null_dim_stock_ticker.90aca455cd, now test.market_data.unique_dim_stock_stock_key.e1e45dbe18)
+[0m17:02:30.104659 [debug] [Thread-2 (]: Began compiling node test.market_data.unique_dim_stock_stock_key.e1e45dbe18
+[0m17:02:30.113681 [debug] [Thread-2 (]: Writing injected SQL for node "test.market_data.unique_dim_stock_stock_key.e1e45dbe18"
+[0m17:02:30.116381 [debug] [Thread-2 (]: Timing info for test.market_data.unique_dim_stock_stock_key.e1e45dbe18 (compile): 17:02:30.104963 => 17:02:30.115734
+[0m17:02:30.117280 [debug] [Thread-2 (]: Began executing node test.market_data.unique_dim_stock_stock_key.e1e45dbe18
+[0m17:02:30.119930 [debug] [Thread-2 (]: Writing runtime sql for node "test.market_data.unique_dim_stock_stock_key.e1e45dbe18"
+[0m17:02:30.121101 [debug] [Thread-2 (]: Using postgres connection "test.market_data.unique_dim_stock_stock_key.e1e45dbe18"
+[0m17:02:30.121587 [debug] [Thread-2 (]: On test.market_data.unique_dim_stock_stock_key.e1e45dbe18: BEGIN
+[0m17:02:30.122108 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m17:02:30.139527 [debug] [Thread-2 (]: SQL status: BEGIN in 0.0 seconds
+[0m17:02:30.140065 [debug] [Thread-2 (]: Using postgres connection "test.market_data.unique_dim_stock_stock_key.e1e45dbe18"
+[0m17:02:30.140528 [debug] [Thread-2 (]: On test.market_data.unique_dim_stock_stock_key.e1e45dbe18: /* {"app": "dbt", "dbt_version": "1.7.20", "profile_name": "market_data", "target_name": "dev", "node_id": "test.market_data.unique_dim_stock_stock_key.e1e45dbe18"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    stock_key as unique_field,
+    count(*) as n_records
+
+from "market_data"."public"."dim_stock"
+where stock_key is not null
+group by stock_key
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m17:02:30.142918 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m17:02:30.144981 [debug] [Thread-2 (]: Timing info for test.market_data.unique_dim_stock_stock_key.e1e45dbe18 (execute): 17:02:30.117788 => 17:02:30.144668
+[0m17:02:30.145459 [debug] [Thread-2 (]: On test.market_data.unique_dim_stock_stock_key.e1e45dbe18: ROLLBACK
+[0m17:02:30.148163 [debug] [Thread-2 (]: On test.market_data.unique_dim_stock_stock_key.e1e45dbe18: Close
+[0m17:02:30.149982 [info ] [Thread-2 (]: 5 of 5 PASS unique_dim_stock_stock_key ......................................... [[32mPASS[0m in 0.05s]
+[0m17:02:30.151815 [debug] [Thread-2 (]: Finished running node test.market_data.unique_dim_stock_stock_key.e1e45dbe18
+[0m17:02:30.153862 [debug] [MainThread]: Using postgres connection "master"
+[0m17:02:30.154338 [debug] [MainThread]: On master: BEGIN
+[0m17:02:30.154653 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m17:02:30.172263 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m17:02:30.172747 [debug] [MainThread]: On master: COMMIT
+[0m17:02:30.173132 [debug] [MainThread]: Using postgres connection "master"
+[0m17:02:30.173522 [debug] [MainThread]: On master: COMMIT
+[0m17:02:30.175244 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m17:02:30.175831 [debug] [MainThread]: On master: Close
+[0m17:02:30.177078 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:02:30.177752 [debug] [MainThread]: Connection 'list_market_data_public' was properly closed.
+[0m17:02:30.178382 [debug] [MainThread]: Connection 'test.market_data.not_null_fact_daily_prices_date_key.9e48087484' was properly closed.
+[0m17:02:30.179818 [debug] [MainThread]: Connection 'test.market_data.not_null_dim_stock_stock_key.e2c95d8500' was properly closed.
+[0m17:02:30.181247 [debug] [MainThread]: Connection 'test.market_data.unique_dim_stock_stock_key.e1e45dbe18' was properly closed.
+[0m17:02:30.182666 [debug] [MainThread]: Connection 'test.market_data.not_null_fact_daily_prices_stock_key.34241fb50a' was properly closed.
+[0m17:02:30.183695 [info ] [MainThread]: 
+[0m17:02:30.185051 [info ] [MainThread]: Finished running 5 tests in 0 hours 0 minutes and 0.38 seconds (0.38s).
+[0m17:02:30.186862 [debug] [MainThread]: Command end result
+[0m17:02:30.196794 [info ] [MainThread]: 
+[0m17:02:30.197955 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:02:30.199144 [info ] [MainThread]: 
+[0m17:02:30.200104 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=0 SKIP=0 TOTAL=5
+[0m17:02:30.201511 [debug] [MainThread]: Command `dbt test` succeeded at 17:02:30.201273 after 0.91 seconds
+[0m17:02:30.202097 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000289BA5DC890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000289BA698B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000289BA698A50>]}
+[0m17:02:30.202536 [debug] [MainThread]: Flushing usage events

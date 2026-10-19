@@ -1,0 +1,12 @@
+name: 'market_data'
+version: '1.0.0'
+profile: 'market_data'
+
+# Dossiers standard de dbt
+model-paths: ["models"]
+target-path: "target"
+clean-targets: ["target", "dbt_packages"]
+
+models:
+  market_data:
+    materialized: table

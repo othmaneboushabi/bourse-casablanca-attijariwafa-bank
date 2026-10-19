@@ -1,0 +1,15 @@
+# Environnement virtuel et caches
+venv/
+__pycache__/
+.pytest_cache/
+
+# Variables d'environnement (Sécurité)
+.env
+
+# Dossiers de données Docker locaux
+minio_data/
+pg_data/
+
+# Fichiers compilés par dbt
+dbt_market/target/
+dbt_market/dbt_packages/
